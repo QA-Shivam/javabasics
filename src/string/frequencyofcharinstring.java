@@ -1,6 +1,8 @@
 package string;
 
 import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 class frequencyofcharinstring{
     public static void charfreq(String str){
@@ -14,6 +16,11 @@ class frequencyofcharinstring{
         }
     }
     public static void main(String[] args) {
-        charfreq("Automation");
+        charfreq("Autom%$ation");
+        String str="Automation";
+        Map<Character,Long> resulr=str.chars()
+                .mapToObj(c->(char)c)
+                .collect(Collectors.groupingBy(c->c,Collectors.counting()));
+        System.out.println(resulr);
     }
 }
