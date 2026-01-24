@@ -1,6 +1,6 @@
-package programs;
+package string;
 
-public class reveserString {
+public class reverseString1 {
     public static String reverseString(String inputString) {
         StringBuilder result = new StringBuilder(inputString);
         int i = 0;
@@ -29,6 +29,6 @@ public class reveserString {
     }
 
     public static void main(String[] args) {
-    System.out.println(reverseString("Shivan uma d"));
+    System.out.println(reverseString("Ram Ji"));
     }
 }
