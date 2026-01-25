@@ -22,5 +22,7 @@ public class findLongestCommonPrefix2 {
     public static void main(String[] args) {
      String [] words= {"clip","clipboard","cold"};
         System.out.println(findLongestCommonPrefix(words));
+        String st="SJO hdh";
+        System.out.println(st.strip());
     }
 }

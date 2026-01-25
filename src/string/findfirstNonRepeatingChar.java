@@ -23,7 +23,7 @@ public class findfirstNonRepeatingChar {
         return  String.valueOf(firstChr);
     }
     public static void main(String[] args) {
-        String str = "Deamon";
+        String str = "Kajol";
        String c= firstNonRepeatingCharacter(str);
         if (c==null){
             System.out.println("There is No Non Repeating Character in this given string: "+ str);
