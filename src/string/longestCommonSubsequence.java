@@ -20,7 +20,7 @@ public class longestCommonSubsequence {
         return dp[s1.length()][s2.length()];
     }
     public static void main(String[] args) {
-        int ans = longestCommonSubsequence("a", "abdc");
+        int ans = longestCommonSubsequence("ABCDGH", "ACDGHR");
         System.out.println(ans);
     }
 }
