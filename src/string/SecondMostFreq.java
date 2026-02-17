@@ -12,6 +12,6 @@ public static char getSecondMostFreq(String str){
 }
 
     public static void main(String[] args) {
-        System.out.println(getSecondMostFreq("aabababa"));
+        System.out.println(getSecondMostFreq("Shivam"));
     }
 }
