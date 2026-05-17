@@ -7,7 +7,7 @@ public class ArrayElementsSum {
 
 
     public static int [] sumElements(int arr[]){
-    return IntStream.range(0,arr.length).map(a->Arrays.stream(arr,a,arr.length).sum()).toArray();
+    return IntStream.range(0,arr.length).map(a-> Arrays.stream(arr,a,arr.length).sum()).toArray();
     }
 
     public static void main(String[] args) {

@@ -2,7 +2,7 @@ package Array;
 
 import java.util.Arrays;
 
-public interface TwosumArrayOneIndex {
+public interface twosumSortedArrayOneIndex {
 
     public static int[] TwosumArrayOneIndex(int[] arr,int traget ){
         int right=0;
@@ -20,8 +20,8 @@ public interface TwosumArrayOneIndex {
         return new int[]{};
     }
     public static void main(String[] args) {
-        int [] arr={2,4,5,6,9};
-        int target=10;
+        int [] arr={-2,-4,-5,-6,9};
+        int target=7;
         System.out.println(Arrays.toString(TwosumArrayOneIndex(arr,target)));
     }
 }

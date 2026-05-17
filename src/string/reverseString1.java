@@ -1,6 +1,9 @@
 package string;
 
 public class reverseString1 {
+
+ //   Given a string, your task is to reverse the string keeping the spaces intact to their positions.
+
     public static String reverseString(String inputString) {
         StringBuilder result = new StringBuilder(inputString);
         int i = 0;

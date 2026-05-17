@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 public class removeDuplicateLetters {
     public static void main(String[] args) {
-        String str= "zvvo";
+        String str= "Ambitions";
         Set<Character> set=new LinkedHashSet<>();
         for (int i=0;i<str.length();i++){
             if (set.contains(str.charAt(i))){

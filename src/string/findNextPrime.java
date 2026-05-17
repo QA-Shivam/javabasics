@@ -3,8 +3,8 @@ package string;
 public class findNextPrime {
 public static int nextPrime(int num){
     num=num+1;
-    while (!isPrime(num)){
-        num=num+1;
+    while (!isPrime(num)) {
+        num = num + 1;
     }
     return  num;
 }
