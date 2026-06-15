@@ -1,7 +1,8 @@
 package PracticeString;
 
-public class ReverseString1 {
+public class ReverseStringKeepSpaceIntact {
     //   Given a string, your task is to reverse the string keeping the spaces intact to their positions.
+
 
     public static void main(String[] args) {
     String str=" Ram @Ji";
