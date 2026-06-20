@@ -2,7 +2,7 @@ package Array;
 
 import java.util.Arrays;
 
-public interface twosumSortedArrayOneIndex {
+public class twosumSortedArrayOneIndex {
 
     public static int[] TwosumArrayOneIndex(int[] arr,int traget ){
         int right=0;
