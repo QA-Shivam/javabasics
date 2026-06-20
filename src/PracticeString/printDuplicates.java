@@ -5,8 +5,6 @@ import java.util.Map;
 
 public class printDuplicates {
     public static void printDuplicate(String str){
-
-
         Map<Character,Integer> freqmap= new HashMap<>();
         for (char c: str.toCharArray()){
             freqmap.put(c,freqmap.getOrDefault(c,0)+1);
