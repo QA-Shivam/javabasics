@@ -15,6 +15,7 @@ public class topkElements {
             countfreq.put(i,countfreq.getOrDefault(i,0)+1);
         }
 
+        //Put Numbers Into Buckets
         for (int number :countfreq.keySet()) {
             int getfrequency = countfreq.get(number);
             if (bucket[getfrequency] == null) {
@@ -25,9 +26,9 @@ public class topkElements {
         }
 
         // Collect top k frequent elements
+       // Keep moving through buckets AND Stop immediately once k elements are collected
             List<Integer> topK = new ArrayList<>();
             for (int position=bucket.length-1;position>=0 && topK.size()<k; position--){
-
                 if (bucket[position]!=null){
                     topK.addAll(bucket[position]);
                 }
@@ -40,3 +41,17 @@ public class topkElements {
 
     }
 }
+
+
+/*
+First I count frequencies using a HashMap.
+
+Then I observe that frequency can never exceed array length.
+
+I create buckets where index represents frequency.
+
+Each bucket stores numbers having that frequency.
+
+Finally I traverse buckets from highest frequency to lowest and collect k elements.
+*/
+
