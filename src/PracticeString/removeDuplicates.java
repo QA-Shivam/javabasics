@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 public class removeDuplicates {
     public static String removeDuplicates(String str){
-        Set<Character> set= new LinkedHashSet<>();
+        Set<Character> set= new LinkedHashSet<>();// LinkedHashSet preserve insertion order
         char []ch=str.toCharArray();
         for (char c: ch){
             if (set.contains(c)){
