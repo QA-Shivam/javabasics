@@ -1,29 +1,28 @@
 package Array;
 
+import java.util.HashMap;
 import java.util.LinkedHashSet;
+import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 public class StrReverse {
 
-    public static boolean isprime(int n){
-        for (int i=2;i*i<=n;i++){
-            if (n%i==0){
-                return false;
-            }
-        }
-        return true;
-    }
+    public static int revint(int no){
+        int rev=0;
+        while (no>0){
+            int lastdigit=no%10;
 
-    public static int nextprime(int n){
-        n=n+1;
-        while (!isprime(n)){
-            n++;
+            if (rev<Integer.MIN_VALUE/10 || rev>Integer.MAX_VALUE/10){
+                return 0;
+            }
+            rev=(rev*10)+lastdigit;
+            no=no/10;
         }
-        return n;
+        return rev;
     }
     public static void main(String[] args) {
-        System.out.println(nextprime(27));
+        System.out.println(revint(123));
     }
 
 }
