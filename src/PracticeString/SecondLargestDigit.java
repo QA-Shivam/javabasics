@@ -23,7 +23,7 @@ public class SecondLargestDigit {
         For example, if the input is "str1025rts", you need to find and return the digit 2.
         */
 
-        System.out.println(SecondLargestDigit("Shiba34nerier8"));
+        System.out.println(SecondLargestDigit("Shiba34nerier88"));
 
     }
 }
