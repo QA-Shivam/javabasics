@@ -17,11 +17,12 @@ public class DecodeStringCharBased {
                 letters.setLength(0);
             }
         }
+        result.append(letters);
         return result.toString();
     }
 
     public static void main(String[] args) {
-        String s="sh2i1ve2";
+        String s="sh2i1ve2k";
         System.out.println(decode(s));
     }
 }

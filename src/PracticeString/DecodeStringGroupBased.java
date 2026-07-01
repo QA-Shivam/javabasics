@@ -15,11 +15,12 @@ public class DecodeStringGroupBased {
                 letters.setLength(0);
             }
         }
+        result.append(letters);
         return result.toString();
     }
 
     public static void main(String[] args) {
-        String str="Si2v1a2";
+        String str="Si2v1a2i";
         System.out.println(deccode(str));
     }
 }
