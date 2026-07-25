@@ -17,18 +17,17 @@ class EncodeDecodeString {
     }
 
     public static List<String> decode(String str) {
-        List<String> decodeString= new ArrayList<>();
-        int i=0;
-        while (i<str.length()){
-            int sepIdx=str.indexOf("*",i);
-            int strLen= Integer.parseInt(str.substring(i,sepIdx));
-            // Move the pointer to the first character
-            i=sepIdx+1;
-            String decode=str.substring(i,i+strLen);
-            decodeString.add(decode);
-            i=i+strLen;
-        }
-        return decodeString;
+    List<String> decodeString= new ArrayList<>();
+    int i=0;
+    while (i<str.length()){
+        int sepidx=str.indexOf("*",i);
+        int len= Integer.parseInt(str.substring(i,sepidx));
+        i=sepidx+1;
+        String decode= str.substring(i,i+len);
+        decodeString.add(decode);
+        i=i+len;
+    }
+    return decodeString;
     }
 
     public static void main(String[] args) {
