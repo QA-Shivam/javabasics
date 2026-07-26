@@ -1,6 +1,6 @@
 package Array;
 
-public class MaxProductOf3Digit {
+public class MaxProductOf3Numbers {
     public static int maxProduct(int []nums){
         int max1= Integer.MIN_VALUE;
         int max2=Integer.MIN_VALUE;
