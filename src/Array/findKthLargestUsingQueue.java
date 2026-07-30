@@ -4,14 +4,14 @@ import java.util.PriorityQueue;
 
 public class findKthLargestUsingQueue {
     public static int findKthLargest(int []nums, int k){
-        PriorityQueue<Integer> minHeap= new PriorityQueue<>();
-        for (int n: nums){
-            minHeap.offer(n);
-            if (minHeap.size()>k){
-                minHeap.poll();
-            }
-        }
-        return minHeap.peek();
+      PriorityQueue<Integer> minHeap= new PriorityQueue<>();
+      for (int n:nums){
+          minHeap.offer(n);
+          if (minHeap.size()>k){
+              minHeap.poll();
+          }
+      }
+      return  minHeap.peek();
     }
 
     public static void main(String[] args) {
