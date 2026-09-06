@@ -5,6 +5,7 @@ import java.util.PriorityQueue;
 public class findKthLargestUsingQueue {
     public static int findKthLargest(int []nums, int k){
       PriorityQueue<Integer> minHeap= new PriorityQueue<>();
+        System.out.println();
       for (int n: nums){
           minHeap.offer(n);
           if (minHeap.size()>k){
@@ -25,6 +26,7 @@ public class findKthLargestUsingQueue {
 A PriorityQueue in Java is a queue where elements are ordered based on their priority,
 rather than the order of insertion. By default, it uses natural ordering (min-heap),
 but a custom comparator can be used to define different priorities.
+Java PriorityQueue has a default initial capacity of 11.
 
 A Min-Heap is a Data Structure with the following properties.
 It is a Complete Binary Tree.
