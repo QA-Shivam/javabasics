@@ -5,9 +5,8 @@ public class checkPangram {
         if (str == null || str.isBlank() || str.length() < 26) {
             return false;
         }
-        char[] c = str.toLowerCase().toCharArray();
-        for (char ch : c) {
-            if (str.indexOf(ch) < 0) {
+        for (char c='a';c<='z';c++) {
+            if (str.indexOf(c) < 0) {
                 return false;
             }
         }

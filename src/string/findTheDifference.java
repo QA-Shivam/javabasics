@@ -12,7 +12,7 @@ public class findTheDifference {
         return ans;
     }
     public static void main(String[] args) {
-        String s = "";
+        String s = "abcd";
         String t = "abcde";
         System.out.println(findTheDifference(s,t));
     }
